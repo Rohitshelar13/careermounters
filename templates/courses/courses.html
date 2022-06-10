@@ -1,0 +1,164 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>College website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/course.css' %}">
+
+</head>
+
+<body>
+  {% include 'home/navbar.html' %}
+  <br>
+  <div class="container my-2">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3 "
+          style="max-width: 540px; background: white; box-shadow: 10px 10px 5px grey; ">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="{% static 'img/COMP.jpg' %}" class="img-fluid rounded" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" style="color: #390000;">
+                <h2 class="card-title" style=" font-family: 'Philosopher', sans-serif;">CS & IT Engineering</h2>
+                <p class="card-text" style="font-size: 14px;">Under Graduate & Post Graduate</p>
+                <a href="{%url 'CS_IT' %}" class="btn btn-dark" style="font-family: 'Josefin Slab', serif;">Explore Courses &rarr;</a>
+                <span> <img class="rounded" src="{% static 'img/COMP-logo.png' %}" alt="" style="float: right;">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <h1>
+          <div class="card mb-3 "
+            style="max-width: 540px; background: white; box-shadow: 10px 10px 5px grey;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{% static 'img/ENTC.jpg' %}" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="color: #390000;">
+                  <h2 class="card-title" style=" font-family: 'Philosopher', sans-serif;">ENTC Engineering</h2>
+                  <p class="card-text" style="font-size: 14px;">Under Graduate & Post Graduate</p>
+                  <a href="{%url 'ENTC' %}" class="btn btn-dark"style="font-family: 'Josefin Slab', serif;">Explore Courses &rarr;</a>
+                  <span> <img class="rounded" src="{% static 'img/ENTC-logo.png' %}" alt="" style="float: right;margin-right: 25px;">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </h1>
+      </div>
+    </div>
+
+
+    <div class="row">
+      
+      <div class="col-md-6">
+        <h1>
+          <div class="card mb-3 "
+            style="max-width: 540px; background: white; box-shadow: 10px 10px 5px grey;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{% static 'img/MECH.jpg' %}" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="color: #390000;">
+                  <h2 class="card-title" style="font-size: 29px;font-family: 'Philosopher', sans-serif;">Mechanical
+                    Engineering</h2>
+                  <p class="card-text" style="font-size: 14px;">Under Graduate & Post Graduate</p>
+                  <a href="{%url 'Mechanical' %}" class="btn btn-dark"style="font-family: 'Josefin Slab', serif;">Explore Courses &rarr;</a>
+                  <span> <img class="rounded" src="{% static 'img/MECH-logo.png' %}" alt="" style="float: right;margin-right: 15px;">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </h1>
+      </div>
+      <div class="col-md-6">
+        <h1>
+          <div class="card mb-3"
+            style="max-width: 540px; background: white; box-shadow: 10px 10px 5px grey;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{% static 'img/ELECTRICAL.jfif' %}" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="color: #390000;">
+                  <h2 class="card-title" style=" font-family: 'Philosopher', sans-serif;">Electrical Engineering</h2>
+                  <p class="card-text" style="font-size: 14px;">Under Graduate & Post Graduate</p>
+                  <a href="{%url 'Electrical' %}" class="btn btn-dark"style="font-family: 'Josefin Slab', serif;">Explore Courses &rarr;</a>
+                  <span> <img class="rounded" src="{% static 'img/ELECTRICAL-logo.png' %}" alt=""
+                      style="float: right;margin-right: 20px;">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      
+      <div class="col-md-6">
+        <h1>
+          <div class="card mb-3 "
+            style="max-width: 540px; background: white; box-shadow: 10px 10px 5px grey;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{% static 'img/civil.jpg' %}" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="color: #390000;">
+                  <h2 class="card-title" style=" font-family: 'Philosopher', sans-serif;">Civil Deparment</h2>
+                  <p class="card-text" style="font-size: 14px;">Under Graduate & Post Graduate</p>
+                  <a href="{%url 'Civil' %}" class="btn btn-dark"style="font-family: 'Josefin Slab', serif;">Explore Courses &rarr;</a>
+                  <span> <img class="rounded" src="{% static 'img/civil-logo.png' %}" alt="" style="float: right;">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </h1>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card mb-3 "
+          style="max-width: 540px; background: white; box-shadow: 10px 10px 5px grey;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="{% static 'img/IT.jpg' %}" class="img-fluid rounded" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" style="color: #390000;">
+                <h2 class="card-title" style=" font-family: 'Philosopher', sans-serif;">Trending courses</h2>
+                <p class="card-text" style="font-size: 14px;">Under Graduate & Post Graduate</p>
+                <a href="{%url 'Trending' %}" class="btn btn-dark"style="font-family: 'Josefin Slab', serif;">Explore Courses &rarr;</a>
+                <span> <img class="rounded" src="{% static 'img/IT-logo.png' %}" alt="" style="float: right;">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

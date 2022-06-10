@@ -1,0 +1,15 @@
+
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Carrer<samp style="font-family: 'Reggae One', cursive; color: #ffc645;">M</samp>ounters</label>
+    <ul>
+        <li><a href="{% url 'courses' %}" class="{% if 'courses' in request.path %}active{% endif %}">Courses</a></li>
+        <li><a href="{% url 'videos' %}" class="{% if 'videos' in request.path %}active{% endif %}">Videos</a></li>
+        <li><a href="{% url 'opportunities' %}" class="{% if 'opportunities' in request.path %}active{% endif %}">Opportunities</a></li>
+        <li><a href="{% url 'UserProfile' %}" class="{% if 'UserProfile' in request.path %}active{% endif %}">Profile</a></li>
+        <li><a href="{% url 'logout' %}">Sign Out <i class="fa fa-angle-down"></i></a></li>
+    </ul>
+  </nav>

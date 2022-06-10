@@ -1,0 +1,1 @@
+web: gunicorn CAREERMOUNTERS.wsgi --log-file -
