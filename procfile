@@ -1,1 +1,1 @@
-web: gunicorn careermounters.wsgi --log-file -
+web: gunicorn CareerMounters.wsgi --log-file -
